@@ -5,12 +5,16 @@
 
   <div data-ng-controller = "NameController as nam">
     <p> Please enter your name: </p>
+
     <input type = "text" data-ng-model = "name"/>
     <button data-ng-click = "nam.setName(name)">Save</button>
+
+    <br/> 
+    
+    <h3> Typing... {{name}} </h3>
   </div>
 
-  <br/>
-  
-  <h3> Typing... {{name}} </h3>
+
+
 
 </div>
