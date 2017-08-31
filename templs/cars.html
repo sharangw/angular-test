@@ -3,10 +3,11 @@
     <h3> List Example </h3>
 
     <br/>
-    
+
     <div data-ng-controller ="ListCtrl as list">
         <ul>
-            Your cars:
+            Your cars: 
+            <br/>
             <li data-ng-repeat ="car in list.cars">
                 {{car.make}} {{car.model}}
             </li>
