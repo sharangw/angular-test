@@ -4,7 +4,7 @@ angular.module("AppModule").controller("HomeController", function() {
 
 });
 
-angular.module("AppModule").controller("AboutController", function() {
+angular.module("AppModule").controller("CountController", function() {
     
     var self = this;
 
@@ -14,4 +14,15 @@ angular.module("AppModule").controller("AboutController", function() {
         self.count++;
     }
 
+});
+
+angular.module("AppModule").controller("ListCtrl", function() {
+
+    var self = this;
+
+    self.cars = [
+        {make:"Toyota", model:"Camry"},
+        {make:"Honda", model:"CR-V"},
+        {make:"Subaru", model:"Impreza"}
+    ];
 });
