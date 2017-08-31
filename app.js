@@ -21,9 +21,23 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: '/about',
 		templateUrl: 'templs/about.html',
 	};
+
+	var carState = {
+		name: 'cars',
+		url: '/cars',
+		templateUrl: 'templs/cars.html',
+	};
+
+	var pokeState = {
+		name: 'poke',
+		url: '/poke',
+		templateUrl: 'templs/poke.html',
+	};
 	
 	$stateProvider.state(homeState);
 	$stateProvider.state(aboutState);
+	$stateProvider.state(carState);
+	$stateProvider.state(pokeState);
 	
 	//default routing
 	$urlRouterProvider.otherwise('/');
