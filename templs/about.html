@@ -1,6 +1,10 @@
 <div class = "container-fluid">
     <h1> About </h1>
 
+    <div data-ng-controller = "NameController as name">
+        Hello {{name.getName()}}
+    </div>
+
     <div data-ng-controller = "CountController as cou">
         <button data-ng-click = "cou.addOne()">Test Addition</button>
         <h3>{{cou.count}}</h3>
@@ -9,7 +13,7 @@
     <div data-ng-controller ="ListCtrl as list">
         <ul>
             <li data-ng-repeat ="car in list.cars">
-                {{car.make}}, {{car.model}}
+                {{car.make}} {{car.model}}
             </li>
         </ul>
     </div>

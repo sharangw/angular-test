@@ -3,11 +3,14 @@
 
   <br/>
 
-  <p> Please enter your name: </p>
-  <input type = "text" data-ng-model = "name"/>
+  <div data-ng-controller = "NameController as nam">
+    <p> Please enter your name: </p>
+    <input type = "text" data-ng-model = "name"/>
+    <button data-ng-click = "nam.setName(name)">Save</button>
+  </div>
 
   <br/>
   
-  <h3> Hello {{name}} </h3>
+  <h3> Typing... {{name}} </h3>
 
 </div>
